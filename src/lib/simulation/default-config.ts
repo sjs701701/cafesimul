@@ -1,0 +1,70 @@
+import type { EnvironmentConfig } from "./types";
+
+export const DEFAULT_CONFIG: EnvironmentConfig = {
+  demand: {
+    baseVisitors: 180,
+    peakIntensity: 1.35,
+    streetTraffic: 72,
+    marketingSpend: 36,
+    competitorPressure: 34,
+    localEventBoost: 12,
+    takeawayShare: 38,
+  },
+  customers: {
+    commuterShare: 34,
+    studentShare: 18,
+    remoteWorkerShare: 28,
+    touristShare: 20,
+    priceSensitivity: 45,
+    patienceMinutes: 12,
+    loyalty: 42,
+  },
+  external: {
+    weather: "clear",
+    season: "spring",
+    weekdayProfile: "weekday",
+    temperatureOutdoor: 18,
+  },
+  staff: {
+    baristas: 3,
+    cashiers: 2,
+    skill: 72,
+    fatigue: 24,
+    breakIntervalMinutes: 150,
+    breakDurationMinutes: 12,
+    multitasking: 64,
+  },
+  menu: {
+    averagePrice: 6100,
+    complexity: 48,
+    foodAttachRate: 24,
+    costRatio: 32,
+  },
+  equipment: {
+    espressoMachines: 2,
+    grinderThroughput: 72,
+    posTerminals: 2,
+    pickupCapacity: 12,
+  },
+  space: {
+    seats: 46,
+    tableSpacing: 66,
+    pathEfficiency: 74,
+    counterLayout: 68,
+    comfort: 70,
+  },
+  ambience: {
+    lightingLux: 420,
+    colorTemperature: 3600,
+    musicVolume: 48,
+    musicTempo: 92,
+    noiseDb: 58,
+  },
+  indoor: {
+    temperature: 22,
+    humidity: 46,
+    co2: 760,
+    ventilationRate: 7.5,
+    cleanliness: 84,
+  },
+};
